@@ -9,23 +9,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <img class="client-logo" src="img/client-logo.jpg" alt="">
-            <img class="opportune-logo" src="img/opportune.jpg" alt="">
-        </header>
+    <nav class="header">
+        <img class="client-logo" src="img/client-logo.jpg" alt="client logo">
+        <img class="opportune-logo" src="img/opportune.jpg" alt="client logo">
 
-        <div class="divider"></div>
+    </nav>
 
-        <center>
-            <h2 class="welcome-title">Welcome to Enterprise HRMS</h2>
-            <h3 class="welcome-subtitle">Employee Self Service</h3>
-        </center>
-    </div>
+    <div class="divider"></div>
+    <center>
+        <h2 class="welcome-title">Welcome to Enterprise HRMS</h2>
+        <h3 class="welcome-subtitle">Employee Self Service</h3>
+    </center>
+
+    <section class="section-login">
+        <div class="parent-login">
+
+            <div class="login">
+                <div>
+                    <center>
+                        <p class="template-login">Login enter login credentails</p>
+                        <div class="outer-box">
+                            <form action="/validate-login" method="post">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="input-icon" style="margin: 10px;">
+                                                    <input autocomplete="off" id="userName" maxlength="20"
+                                                        name="userName" placeholder="Username" tabindex="2" type="text">
+                                                </span>
+                                            </td>
+                                            <td rowspan="2">
+                                                <button id="btnLogin" tabindex="1">Login</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="input-icon" style="margin: 10px;">
+                                                    <input type="Password" id="Password" name="Password" maxlength="40"
+                                                        placeholder="Password" tabindex="3">
+                                                    <i class="icon-lock"
+                                                        style="margin-top: 5px !important; margin-left: 5px; font-size: 14px;">
+                                                    </i>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <a href="#forgotPwd" data-toggle="modal" data-backdrop="static"
+                                                    data-keyboard="false" id="anchForgot">
+                                                    <span style="color: #000;
+                                                    text-decoration: underline;" id="spnForgetPwd">Forgot
+                                                        Password</span>
+                                                </a>
+                                                <a href="#ResetPwd" data-toggle="modal" data-backdrop="static"
+                                                    data-keyboard="false" id="anchReset">
+                                                    <span style="color: #000;
+                                                    text-decoration: underline;" id="spnResetPwd">Reset Password</span>
+                                                </a>
+                                                <br>
+                                                <span style="color: #f00;"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+            <img class="img-login-bg" src="img/LoginBg.png" alt="login logo">
+        </div>
+    </section>
 </body>
 
 </html>

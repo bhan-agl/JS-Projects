@@ -4,25 +4,31 @@
 }
 
 body {
+    padding: 0;
     margin: 0;
     background: white;
 }
 
-header {
+nav {
     display: flex;
     flex-direction: column;
 
     .client-logo {
+        justify-content: center;
+        align-items: center;
         margin: auto;
         max-height: 70px;
         min-height: 40px;
     }
 
     .opportune-logo {
+        justify-content: center;
+        align-items: center;
         margin: auto;
         max-height: 70px;
         min-height: 40px;
     }
+
 }
 
 .divider {
@@ -32,59 +38,133 @@ header {
     background: var(--primary_color);
 }
 
-// header {
-//     display: flex;
-//     justify-content: space-between;
+.welcome-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary_color);
+    font-family: 'Raleway', sans-serif;
+}
 
-//     .client-logo {
-//         max-height: 70px;
-//         min-height: 40px;
-//         margin: 10px 0 10px 10px;
-//     }
+.welcome-subtitle {
+    color: var(--light-gray);
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.1;
+}
 
-//     .opportune-logo {
-//         max-width: 200px;
-//         max-height: 70px;
-//         min-height: 40px;
-//         margin: 10px 10px 10px 0px;
-//     }
-// }
+.parent-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
+    .img-login-bg {
+        margin: auto;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0 30px 0;
+    }
 
+    .login {
+        width: 90%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0 30px 0;
+        margin: 0px auto;
+        box-shadow: -2px 0 10px 2px #c2c2c2;
 
-// .welcome-title {
-//     font-size: 2rem;
-//     font-weight: 500;
-//     color: var(--primary_color);
-//     font-family: 'Raleway', sans-serif;
-// }
+        div {
+            justify-content: center;
+            align-items: center;
 
-// .welcome-subtitle {
-//     color: var(--light-gray);
-//     font-family: 'Raleway', sans-serif;
-//     font-size: 24px;
-//     line-height: 1.1;
-// }
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                opacity: .8;
+                font-weight: 300 !important;
+                color: #000 !important;
+            }
 
+            .outer-box {
+                max-width: 400px;
+                padding: 50px 10px 30px;
+                margin: 10px 20px 20px;
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 0 0 1px 1px #b3b3b3;
 
+                form {
+                    display: flex;
+                    flex-direction: column;
+                }
 
+                input {
+                    height: 45px;
+                    max-width: 250px;
+                    min-width: 150px;
+                    border-radius: 5px;
+                    border: 1px solid #999;
+                    padding-left: 35px;
+                    background-color: #e4dddd !important;
+                    color: #000;
+                }
 
-// mediaquery started
-@media screen and (min-width: 680px) {
-    header {
+                #btnLogin {
+                    border: 0;
+                    background: #AC512D;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 100px;
+                    font-size: 12px;
+                    padding: 20px 12px;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+
+                #spnForgetPwd {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+                #spnResetPwd {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// media queries started 
+
+// disable lower end screens
+@media screen and (max-width: 400px) {
+    body:not(:first-child) {
+        display: none;
+    }
+
+    body {
+        background: var(--primary_color) !important;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    nav {
         flex-direction: row;
         justify-content: space-between;
 
         .client-logo {
-            max-height: 70px;
-            min-height: 40px;
             margin: 10px 0 10px 10px;
         }
 
         .opportune-logo {
-            max-width: 200px;
-            max-height: 70px;
-            min-height: 40px;
             margin: 10px 10px 10px 0px;
         }
     }
