@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Before & After</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        body {
-            padding: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-family: 'Rubik Distressed', cursive;
-        }
+      body {
+        padding: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: "Rubik Distressed", cursive;
+      }
 
-        header::before {
-            content: "";
-            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.3;
-            top: 0;
-            left: 0;
-        }
+      header::before {
+        content: "";
+        background: url("https://source.unsplash.com/collection/190727/1600x900")
+          no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+      }
 
-        .navigation-list {
-            font-size: 20px;
-            display: flex;
+      .navigation-list {
+        font-size: 20px;
+        display: flex;
+      }
 
-        }
+      li {
+        list-style: none;
+        padding: 20px 23px;
+      }
 
-        li {
-            list-style: none;
-            padding: 20px 23px;
-        }
+      li:hover {
+        color: tomato;
+        text-decoration: underline;
+      }
 
-        li:hover {
-            color: tomato;
-            text-decoration: underline;
-        }
+      section {
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
 
-        section {
-            margin: 3px 23px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+      h1 {
+        font-size: 4rem;
+      }
 
-        h1 {
-            font-size: 4rem;
-        }
-
-        p {
-            text-align: center;
-            padding: 0 4px;
-        }
+      p {
+        text-align: center;
+        padding: 0 4px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navBar">
-            <ul class="navigation-list">
-                <li class="item1">Home</li>
-                <li class="item2">About</li>
-                <li class="item3">Services</li>
-                <li class="item4">Contact Us</li>
-            </ul>
-        </nav>
+      <nav class="navBar">
+        <ul class="navigation-list">
+          <li class="item1">Home</li>
+          <li class="item2">About</li>
+          <li class="item3">Services</li>
+          <li class="item4">Contact Us</li>
+        </ul>
+      </nav>
     </header>
 
     <section>
-        <h1>Welcome to coding world</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero amet accusantium culpa soluta quos odio
-            architecto magni deleniti harum quod illo reiciendis inventore laudantium ab eveniet sed facilis tempore
-            sunt, sit obcaecati! Reiciendis, libero?</p>
+      <h1>Welcome to coding world</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero amet
+        accusantium culpa soluta quos odio architecto magni deleniti harum quod
+        illo reiciendis inventore laudantium ab eveniet sed facilis tempore
+        sunt, sit obcaecati! Reiciendis, libero?
+      </p>
     </section>
-
-</body>
-
+  </body>
 </html>
